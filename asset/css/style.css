@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white : white;
+    --color-black : black;
+    --color-success : green;
+    --color-dark-violet : rgb(52, 25, 52);
+}
+
+.heading{
+    font-size: 32px;
+}
+
+.info{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+i{
+    cursor: pointer;
+}
+
+.mein-navbar .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover,
+.mein-navbar .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: orange;
+    border-bottom: 4px solid orange;
+}
+
+.mein-navbar .navbar-nav .nav-link {
+    color: var(--color-white);
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+}
+
+/* ////////////////////////  carousel css starts from here /////////////////////////// */
+
+.carousel-item  {
+    height: 400px;
+}
+
+.carousel-item  img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption-2{
+    left: 20%;
+}
+
+/* //////////////// gear-card css ////////////////////////////// */
+
+.gear-card{
+    margin-bottom: 40px;
+}
+
+/* ///////////////// road bg css //////////////// */
+
+.road-bg{
+    width: 100%;
+    height: 250px;
+    background-image: url(/asset/image/lights.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.road-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+}
+
+/* /////////////////////   laptop-section css starts from here /////////////////////////////////// */
+
+.laptop-section{
+    padding: 30px 0;
+}
+
+.laptop-image{
+    width: 100%;
+    height: 300px;
+}
+
+.laptop-image > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.learn-more:hover{
+    background-color: white;
+    color: red;
+}
+
+
+/* //////////////////////////////// media-parallyx css starts from here /////////////////////////// */
+
+.media-parallyx{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../image/media.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+/* ////////////////////////////////// lightbox-images css starts from here ///////////////////////////// */
+
+.lightbox-images img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ///////////////////////////////////// sign-up css starts from here ///////////////////////////// */
+
+.sign-up .form-control{
+    display: inline-block;
+    width: 45%;
+}
+
+.sign-up .input-forms{
+    position: relative;
+    width: 100%;
+}
+
+/* //////////////////////////////////// footer css starts from here ///////////////////////////////// */
+
+.footer{
+    background-color: var(--color-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 992px) {
+    .mein-navbar li{
+        margin: 0 5px;
+    }
+    .mein-navbar {
+       padding: 0;
+    }
+    .mein-navbar .navbar-brand {
+        color: #fff;
+        padding: 0;
+    }
+    .laptop-section .info{
+        margin: 50px 0;
+    }
+}
+
+@media all and (max-width: 992px){
+    .sign-up .form-control{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
